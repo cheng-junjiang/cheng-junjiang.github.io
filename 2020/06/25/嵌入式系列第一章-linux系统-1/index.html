@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/6 | Hexo</title>
+  <title>嵌入式系列第一章-linux系统_1 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/06/index.html">
+  <meta name="description" content="##一. 总体技术框架分析 软件（应用层）：    开发环境：Linux    开发语言：C&#x2F;C++          GEC6818         基础：         C：变量，循环，数组，指针，函数，结构体...         接口：系统IO，标准IO，C语言中标准C库          Linux：操作方式，命令，如何使用&#x2F;查看帮助手册，配置文件，共享文件夹...         开">
+<meta property="og:type" content="article">
+<meta property="og:title" content="嵌入式系列第一章-linux系统_1">
+<meta property="og:url" content="http://yoursite.com/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%B3%BB%E7%BB%9F-1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##一. 总体技术框架分析 软件（应用层）：    开发环境：Linux    开发语言：C&#x2F;C++          GEC6818         基础：         C：变量，循环，数组，指针，函数，结构体...         接口：系统IO，标准IO，C语言中标准C库          Linux：操作方式，命令，如何使用&#x2F;查看帮助手册，配置文件，共享文件夹...         开">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-25T14:01:06.000Z">
+<meta property="article:modified_time" content="2020-06-25T14:29:37.013Z">
 <meta property="article:author" content="cheng-junjiang">
 <meta name="twitter:card" content="summary">
   
@@ -169,76 +173,457 @@
 		<script src="https://g.joyinshare.com/hc/piao.js" type="text/javascript"></script>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-嵌入式系列第一章-linux系统-1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-liunx%E7%BC%96%E8%BE%91%E5%99%A8/" class="archive-article-date">
-  	<time datetime="2020-06-25T14:33:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-25</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-liunx%E7%BC%96%E8%BE%91%E5%99%A8/">嵌入式系列第一章-liunx-vi编辑器</a>
+    <h1 class="article-title" itemprop="name">
+      嵌入式系列第一章-linux系统_1
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%B3%BB%E7%BB%9F-1/" class="archive-article-date">
+        
+        <a href="/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%B3%BB%E7%BB%9F-1/" class="archive-article-date">
   	<time datetime="2020-06-25T14:01:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%B3%BB%E7%BB%9F-1/">嵌入式系列第一章-linux系统_1</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##一. 总体技术框架分析</p>
+<pre><code>软件（应用层）：    开发环境：Linux    开发语言：C/C++
 
-        <div class="article-info info-on-right">
-          
-          
+        GEC6818
+        基础：
+        C：变量，循环，数组，指针，函数，结构体...
+        接口：系统IO，标准IO，C语言中标准C库
 
+        Linux：操作方式，命令，如何使用/查看帮助手册，配置文件，共享文件夹...
+        开发板：连接，配置开发板，下载/上传文件
+
+        文件IO：在Linux下处理文件？
+        算法数据结构：使用C实现数据存储方式—链表
+
+        Linux线程，socket网络编程，TCP/UDP协议，串口，音频，视频，数据库
+
+硬件（底层）：    STM32
+        Linux驱动      ---&gt;   传感器驱动</code></pre><p>##二、Linux系统操作</p>
+<pre><code>图形简陋   ---&gt;    开发效率高
+操作方式   ---&gt;    Linux命令行    ---&gt;    在Linux中，操作所有的步骤都是使用命令来完成！
+        windows：图形界面
+开源，免费
+
+命令行在哪里？
+
+1、如何打开终端？
+
+    命令写在命令行上，命令行在终端上，终端怎么打开呢？
+    1）双击terminal图标
+    2）组合键：ctrl + alt +T
+
+2、一旦打开了一个终端，默认会在终端上启动一个bash进程。
+    bash进程会帮用户解析所有的命令。
+
+gec@ubuntu:~$     ---&gt;    bash进程所打印出来的命令行提示符
+
+gec@ubuntu:~$ linux命令  --&gt; linux命令一定要在命令行提示符后面写才会生效！
+
+
+3、解析命令行提示符
+
+
+gec@ubuntu:~$
+
+gec：普通用户的用户名    root：超级用户的用户名
+@：用于分割用户名与主机名的分隔符
+ubuntu：主机名
+:：用于分割主机名与当前所在的路径！
+~：家目录的路径，当前所在的路径
+$：当前身份    $：普通用户  #：超级用户
+
+
+4.终端打开后默认在哪个路径下？
+
+    默认都会是在家目录下,通过env命令查看环境变量HOME
+HOME=/home/gec        ---&gt;    系统启动一个终端，都是在/home/gec这个目录
+
+~   等价于 /home/gec    ---&gt;  根目录下的home目录，home目录下的gec目录
+                         /           home/           gec/</code></pre><p>##三、Linux框架与基本命令</p>
+<pre><code>Linux目录架构与windows差异？
+windows架构：容器  ---&gt;  文件夹与文件是包含的关系，里面的文件一定要小于所在的文件夹
+Linux架构：树  ---&gt;  目录与目录之间只是一个索引的关系，并不是包含的关系
+
+
+注意：输入命令时的技巧：tab键（自动补全）
+
+1. pwd    打印当前的工作绝对路径，绝对路径就是从根目录开始，一层层往下写！    
+
+gec@ubuntu:~$ pwd
+/home/gec    ---&gt;  就是家目录
+
+2. ls    （list）列出当前目录下全部文件/目录的名字，不包括隐藏文件         ls  等价于 ls .
+    ls /    列出根目录下全部文件/目录的名字
+    ls -a    列出当前目录下全部文件/目录的名字，包括隐藏文件(以.开头)
+    ls -l    列出当前目录下全部文件/目录的详细信息
+
+.bash_history  --&gt;  存放历史写过的命令
+.bashrc  ---&gt;  终端开启时，默认开启一个bash进程，而bash进程启动前，会先执行一遍这个文件的内容。
+
+当前目录：/home/gec
+
+..  上一级目录   /home/
+.   当前目录      /home/gec
+
+
+gec@ubuntu:~$ ls -l
+
+   类型          权限        链接数     用户名   组名    文件大小    修改日期               文件/目录名字
+   d          rwxr-xr-x        2         gec      gec     4096       Apr 12  2019           Downloads
+   -          rw-r--r--        1         gec      gec     8445       Jun 27  2013           examples.desktop
+
+-：普通文件    d：目录文件    b：字符文件或块文件    s:套接字文件    p:管道文件    i：链接文件
+
+3. cd    用于切换工作路径
+
+用法：cd+空格+绝对/相对路径     ---&gt;   在linux中，命令与参数之间一定有空格！！
+
+绝对路径：就是从根目录开始，一层层往下写！        当前在/home下，想切换到家目录下  绝对路径  cd  /home/gec
+相对路径：相对于当前路径而言，别的路径与当前路径的关系    当前在/home下，想切换到家目录下  相对路径  cd  ./gec
+
+几个cd命令常用实例：
+1）切换到家目录：  cd /home/gec   等价于  cd ~    等价于  cd   --&gt; 什么参数都不加，默认回到HOME环境下的路径
+2）切换到上一级目录： cd ../ 
+3）cd ./gec  和  cd gec/   其实是等价于的，如果gec/前面没有/，默认就会在当前目录下寻找gec
+4）切换到刚刚去过的目录  cd -
+
+
+cd /gec/       切换到根目录下gec目录
+cd gec/          切换到当前目录下gec目录   等价于  cd ./gec/      
+cd /home/gec   切换到根目录下home目录，home目录下的gec目录
+cd /home/      切换到根目录下home目录
+
+为什么cd -可以回到刚刚去过的地方？
+
+OLDPWD=/home/gec/Download/linux-2.6.35.7-gec/arch/arm/mach-ep93xx/include/mach   --&gt; cd - 只是回到OLDPWD所在的路径下
+PWD=/home/gec
+
+4. touch   创建文件
+
+gec@ubuntu:~$ touch test.txt   --&gt; 当前用户在家目录下创建文件，不会受到系统的权限
+
+   用户名    --&gt;   家目录
+    gec         /home/gec    --&gt; gec在家目录下修改任何的资源都不会受到干扰！
+
+gec@ubuntu:/$ touch test.txt   --&gt; 当前用户在根目录（不在家目录）创建文件，就会受到权限干扰
+touch: cannot touch `test.txt&apos;: Permission denied（权限拒绝）
+
+  用户名    --&gt;  不在家目录
+   gec            /        --&gt; gec在家目录下修改任何的资源都会受到干扰！
+
+   当在修改系统资源时，提示Permission denied，解决方法： 切换到超级用户身份处理当前事情
+
+   方法一： 临时切换到超级用户身份执行该命令（借朋友VIP卡）
+
+gec@ubuntu:/$ sudo touch test.txt
+[sudo] password for gec:     --&gt; 输入密码是没有回显！  输入直接按回车！
+
+
+   方法二： 直接切换为超级用户执行该命令（请你朋友一起去吃饭）
+
+gec@ubuntu:/$ sudo su
+root@ubuntu:/# touch test.txt   --&gt; 不会受到权限干扰！
+root@ubuntu:/# exit
+gec@ubuntu:/$
+
+            家目录
+    gec   --&gt;      /home/gec
+    root  --&gt;      /root
+
+
+5. mkdir   创建目录
+
+gec@ubuntu:~$ mkdir dir    --&gt; 使用方法与touch命令一致！
+gec@ubuntu:/$ sudo mkdir dir
+-p: 创建多级文件夹，例如test01/test02/test03
+在多个文件夹里的每个文件夹里面需要创建一个tool文件夹的话，可以用如下命令实现：mkdir {test01,test02,test013}/tool
+
+6. rm      移除文件/目录
+
+-i:为智能互动（确认是否删除）
+删除文件：
+gec@ubuntu:/$ rm abc.c
+gec@ubuntu:/$ sudo rm abc.c 
+
+删除目录：
+gec@ubuntu:~$ rm dir
+rm: cannot remove `dir&apos;: Is a directory
+gec@ubuntu:~$ rm dir/ -r    --&gt; 删除目录需要递归删除内容   -r: 递归
+exit
+--&gt;从超级用户切换到普通用户
+7. file --&gt; 查看文件本身的属性 --&gt;主要查看文件运行结构 - -&gt;
+x86(Intel 80386) / ARM
+file文件名
+gec@ubuntu: /mnt/hgfs/GZ1917/01 C语言/09/code$ file lianxi
+1 ianxi: ELF 32-bit LSB executable, Intel 80386， version 1 (SYSV) ,
+dynamically linked (uses shared libs) ，for GNU/Linux 2.6.24,
+Bui ldID [ shal]=0xe 5dbc39f5a5034d99b8da74b77000511 fbdbbaf7，not
+stripped
+8. cat
+-&gt; 在终端中打印文本的内容
+--&gt; 只看前面几行，可以用cat，如果
+查看内容较多--&gt; vi &amp; gedit &amp; notepad++
+gec@ubuntu: /mnt/hgfs/GZ1917/01 C语言/09/code$ cat lianxi.c
+#include &lt;stdio.h&gt;
+struct mydata{
+char name[20] ;
+int age;
+char tel[20] ;
+};
+gec@ubuntu: /mnt/hgfs/GZ1917/01 C语言/09/code$ cat lianxi.c -n (-n :
+把代码前面的行号也打印出来)
+#include &lt;stdio.h&gt;
+struct mydata{
+char name[20] ;
+int age;
+har tel[20];
+},
+9. cp --&gt;拷贝文件/目录到另外-一个目录
+用法: cp 需要拷贝的那个文件/目录的路径拷贝到哪里去的路径
+拷贝文件与拷贝目录是不- -样的:
+cp文件名路径目标路径
+cp目录名路径目标路径-r
+注意:文件/目录/目标路径既可以使用绝对路径，也可以使用相对路径
+10. mv ---&gt;移动文件到另外-一个路径下/重命名该文件名
+用法: mv需要移动的文件的路径目标路径
+mv需要重命名文件的路径新的文件名
+mv究竟是移动还是重命名?决定?
+
+mv文件名目录名
+--&gt; mv就是移动
+mv文件名文件名
+--&gt; mv重命名
+11. tar压缩/ 解压
+-般地， 在linux中，常见压缩包格式: .gz结尾 / .bz2结尾
+tar:解压/ 压缩的命令
+z: 处理. gz结尾的压缩包
+j:处理.bz2结尾的压缩包
+x:解压
+--&gt;决定tar命令是解压命令
+c: 压缩
+--&gt;决定tar命令是压缩命令
+v:以可见的方式进行处理 --&gt; 把处理的过程打印在终端上-&gt; 该参数不是
+必须!
+f: 不可忽略文件
+例子: 4.jpg a.c b.txt 需要进行压缩
+1.将所有的文件塞进 目录code
+2.使用压缩的命 令进行打包
+压缩成: example. tar.gz
+--&gt;压缩包格式:
+xxxxx.tar.gZ / XXXX. tar .bz2
+tar zcvf example. tar.gz code/
+公式:压缩命令对应参数 压缩包名字 需 要处理内容
+由于有v参数，压缩过程显示在终端上:
+code/
+code/4.jpg .
+code/a.c
+code/b. txt
+3. 使用解压命令打开压缩包
+tar zxvf example. tar.gz
+公式:解压命令对应参数 压缩包名字
+code /
+code/4. jpg
+code/a. c
+code/b. txt 
+4. 指定解压到某个路径 --&gt; 使用参数-C
+tar zxvf example.tar.gz --&gt; 默认将当前目录下的example. tar . gz解压
+到当前目录下
+等价于tar zxvf example. tar.gz -C
+tar zxvf example.tar.gz -C某个路径(绝对/ 相对路径)
+--&gt;指定将压缩
+包解压到某个路径下
+12. chmod
+--&gt;修改文件/目录的权限
+1.什么是文件/目录权限?
+ls-1查看权限:
+rw-rw-r-- 1 gec gec
+66 Feb 25 18:40 project.c
+rw-rw-r-- --&gt; 该文件/目录的权限
+rw- :创建者
+user (u)
+创建者可读可写不执行该文件
+rw- :同组的人
+group (g)
+--&gt;同组的人可读可写不执行该文件
+r-- :其他人
+other(o) --&gt; 其他人只读该文件
+八进制权重
+w: write写权限
+x: execute 执行权限
+2.如何修改权限?
+1)单个修改
+公式: chmod (谁) (+/-) (r/w/x) 需要修改的文件的路径
+谁: u/g/o
++/-:添加/删除
+r/w/ x:对应需要改动的权限
+例子: project.c --&gt; 给创建者添加执行权限
+chmod u+x project.c
+2)多个同时修改
+例子:想修改project.c文件r-x-wxrw-
+1)计算修改之后的权重是多少536
+2)使用chmod命令修改权重
+公式: chmod权重需要修改的文件的路径
+3)最终命令:
+chmod 536 project.c
+
+Head查看一个文件的前n行，如果不指定n，则默认显示前10行
+-n:列出前几行
+Tail 查看一个文件的末n行，如果n不指定默认显示后10行
+-n:列出后几行</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-linux%E7%B3%BB%E7%BB%9F-1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/06/25/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E7%AB%A0-liunx%E7%BC%96%E8%BE%91%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          嵌入式系列第一章-liunx-vi编辑器
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="嵌入式系列第一章-linux系统-1" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
+  
+
+  
+
+  
 
 
           </div>
@@ -261,8 +646,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
